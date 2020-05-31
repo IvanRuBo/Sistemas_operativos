@@ -19,16 +19,26 @@ public class cliente {
     private String apellido;
     private List<habitacion> habitaciones;
     private String fecha_reserva;
+    private String edad;
+
+    public void setEdad(String edad) {
+        this.edad = edad;
+    }
+
+    public String getEdad() {
+        return edad;
+    }
 
     public cliente() {
     }
 
-    public cliente(String cedula, String nombre, String apellido, List<habitacion> habitaciones, String fecha_reserva) {
+    public cliente(String cedula, String nombre, String apellido, List<habitacion> habitaciones, String fecha_reserva,String edad) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
         this.habitaciones = habitaciones;
         this.fecha_reserva = fecha_reserva;
+        this.edad = edad;
     }
 
    
